@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="style.css">
     <title>Subrata Dev Mohanta</title>
+    <script src="https://kit.fontawesome.com/9453457fe7.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -72,6 +74,40 @@
             </div>
         </div>
     </div>
+    <!-- -------------------------------------------services-------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>WEb Devlopment</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum error soluta consequuntur porro
+                        laboriosam, iure earum pariatur obcaecati doloremque. Nemo sint officia quia, obcaecati
+                        similique in modi consequuntur reprehenderit nesciunt!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>WEb Devlopment width Html Css</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum error soluta consequuntur porro
+                        laboriosam, iure earum pariatur obcaecati doloremque. Nemo sint officia quia, obcaecati
+                        similique in modi consequuntur reprehenderit nesciunt!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>WEb Devlopment width React</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum error soluta consequuntur porro
+                        laboriosam, iure earum pariatur obcaecati doloremque. Nemo sint officia quia, obcaecati
+                        similique in modi consequuntur reprehenderit nesciunt!</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
 
@@ -85,7 +121,8 @@
             for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
-
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
 
     </script>
