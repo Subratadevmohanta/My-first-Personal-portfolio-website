@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <title>Subrata Dev Mohanta</title>
 </head>
@@ -22,8 +23,73 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header-text">
+                <p>Web Devloper</p>
+                <h1>Hi I'm <span>Subrata Dev</span> <br>Mohanta From Bangladesh.</h1>
+            </div>
         </div>
     </div>
+    <!-- ----------------------------About section start--------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/image1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem aspernatur repudiandae
+                        praesentium reprehenderit dolores rem soluta, magni ad reiciendis recusandae pariatur
+                        temporibus. Iste maiores fuga expedita quo, voluptatibus molestiae.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('expreience')">Expreience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>WEb</span> <br>Bloger</li>
+                            <li><span>WEb</span> <br>Devloper</li>
+                            <li><span>WEb Devloper</span> <br>With Html, Css, Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="expreience">
+                        <ul>
+                            <li><span>2022-Learn React</span> <br>European IT Solutions Institute</li>
+                            <li><span>2021-Learn Html Css </span> <br>with Jhonker Mahabub</li>
+                            <li><span>2018-2022 Diploma</span> <br> In computer Since</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span> <br>European IT Solutions Institute</li>
+                            <li><span>2021-2022</span> <br>Kurigram Polytechnic Institute.</li>
+                            <li><span>2018-2021</span> <br>Rangpur Technical School and Collage.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+        }
+
+    </script>
+
 </body>
 
 </html>
